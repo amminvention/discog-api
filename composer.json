@@ -1,0 +1,39 @@
+{
+    "name": "shehzad/discog-api",
+    "description": "Discog Api Library",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "package"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shehzad Fakhar",
+            "email": "shahzad.fakhar@ymail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4",
+        "illuminate/support": "^8.0",
+        "guzzlehttp/guzzle": "7.5.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shehzad\\DiscogApi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Shehzad\\DiscogApi\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DiscogsServiceProvider"
+            ]
+        }
+    }
+}
